@@ -1,59 +1,90 @@
-## What is Solution Architect
+# Solution Architect
 
+> Defines and foresees multiple aspects of a business solution — system infrastructure, networking, security, compliance requirements, system operation, cost, and reliability.
 
-> **Solution architect**: defines and foresees multiple aspects of a business solution
-.E.g: system infrastructure, networking, security, compliance requirements, system operation, cost and reliability
+As project size increases and teams become distributed globally, a Solution Architect (SA) ensures long-term sustainability and a solid foundation. SA addresses various solution needs while keeping the business context intact — specifying technology platforms, application components, data requirements, resource requirements, and critical non-functional requirements.
 
-As the project size increases, the team becomes distributed globally. SA in place for long-term sustainability (tinh ben vung) and a solid foundation
+---
 
-Solution Architect addresses various solutions needs, keeping the business context intact
-It specifies and documents technology platforms, applications components, data requirements, resources requirements and many important non-functional requirements such as scalability, reliability performance, throughput, availability, security, and maintainability.
+## Table of Contents
 
-- Help to derive maximum return on investment.
+- [What is a Solution Architect?](#what-is-a-solution-architect)
+- [Responsibilities](#responsibilities)
+- [Types of Solution Architects](#types-of-solution-architects)
+  - [Generalists](#generalists)
+  - [Specialists](#specialists)
+- [Architecture Quality Attributes](#architecture-quality-attributes)
+  - [1. Scalability and Elasticity](#1-scalability-and-elasticity)
 
-> SA needs multiple skillsets from technical leaders and experts, to business analysts and project management.
+---
 
+## What is a Solution Architect?
 
-Responsibility
-+ Address non-functional requirement
-+ Disaster recovery
-+ Security & Compliance
-+ High Availability
-+ Scalability
-+ Application Performance
-+ Network & Request/Response latency
+A Solution Architect bridges business needs with technology decisions. They help derive **maximum return on investment** by defining architectures that are scalable, reliable, secure, and maintainable.
 
+> SA requires multiple skill sets — from technical leadership and domain expertise, to business analysis and project management.
 
-SA can be categorised as generalists or specialists.
-- Generalist SA have the breadth that comes from multiple technical domains
-- Specialist SA have very in-depth knowledge in their area of expertise such as big data, security, and networking
+---
 
-Generalist can be:
-- Enterprise SA (organization strategy, business architecture)
-- SA ( Solution design, solution integration)
-- Technical Architect (Software design, software development)
-- Cloud Architect (Cloud strategy, Cloud migration)
-- Architect Evangelist (Platform adoption, Technical Content)
+## Responsibilities
 
-Specialist can be:
-- Infrastructure Architect (IT infrastructure design, software standardization and patching)
-- Network Architect (Network design, IT network strategy and latency)
-- Data Architect (Data engineering and analysis, Data science and data intelligence)
-- Security Architect (Cyber Security, IT compliance)
+| Area | Description |
+|---|---|
+| **Non-Functional Requirements** | Performance, scalability, throughput, availability, maintainability |
+| **Disaster Recovery** | Business continuity planning and recovery strategies |
+| **Security & Compliance** | Governance, regulatory compliance, and access control |
+| **High Availability** | Fault-tolerant, resilient system design |
+| **Scalability** | Horizontal and vertical scaling strategies |
+| **Application Performance** | Optimization of runtime and resource usage |
+| **Network & Latency** | Request/response latency and network architecture |
 
+---
 
+## Types of Solution Architects
 
-Attribute of the Solution Architect
-- Scalability and Elasticity
-- High availability and resiliency
-- Fault tolerance and redundancy
-- Disaster recovery and business continuity
-- Extensibility and reusability
-- Portability and interoperability 
-- Operational excellence and maintainability
-- Security and Compliance
-- Cost optimization and budgets
+SAs are categorized as **Generalists** or **Specialists**.
+
+### Generalists
+
+Generalists bring breadth across multiple technical domains.
+
+| Role | Focus Areas |
+|---|---|
+| **Enterprise SA** | Organization strategy, business architecture |
+| **Solution Architect** | Solution design, solution integration |
+| **Technical Architect** | Software design, software development |
+| **Cloud Architect** | Cloud strategy, cloud migration |
+| **Architect Evangelist** | Platform adoption, technical content |
+
+### Specialists
+
+Specialists have deep expertise in a specific domain.
+
+| Role | Focus Areas |
+|---|---|
+| **Infrastructure Architect** | IT infrastructure design, software standardization and patching |
+| **Network Architect** | Network design, IT network strategy and latency |
+| **Data Architect** | Data engineering, data science, and data intelligence |
+| **Security Architect** | Cyber security, IT compliance |
+
+---
+
+## Architecture Quality Attributes
+
+A well-designed solution must address these core quality attributes:
+
+- **Scalability and Elasticity** — grow and shrink with demand
+- **High Availability and Resiliency** — minimize downtime
+- **Fault Tolerance and Redundancy** — handle failures gracefully
+- **Disaster Recovery and Business Continuity** — recover quickly from incidents
+- **Extensibility and Reusability** — design for change and reuse
+- **Portability and Interoperability** — work across platforms and systems
+- **Operational Excellence and Maintainability** — ease of operation and upkeep
+- **Security and Compliance** — protect data and meet regulations
+- **Cost Optimization** — balance performance with budget
+
+---
 
 ### 1. Scalability and Elasticity
-- Scalability has always been a primary factor while designing a solution
-- it is not only about growing out your system but also shrinking it to save cost
+
+Scalability is a primary factor in solution design. It's not only about growing your system to handle increased load — it's also about **shrinking it to save cost** when demand decreases.

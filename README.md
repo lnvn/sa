@@ -123,3 +123,36 @@ Quest: What if AWS ASG overscale ?
 - Save session on local => loss session when change target
 - Thrashing - scale high frequency
 - do not monitor ASG activity
+
+
+### Design for performance
+- example you may design a blog web page to load within 500 milliseconds, where there is good internet availability, howerver incase of a slow internet, you can load text and engage the user while images and videos are still loading
+
+- real world: test your application for performance by increasing the load and understand if app can achieve the desired concurrency and user experience.
+
+- at server level: choose the right kind of server
+  - memory: memory congestion can slow down application
+  - storage: choose the right input/output operations per seconds
+
+- at architect level (apply caching at every layer)
+  - Use brower cache on the user's system
+  - Use DNS cache for quick website lookup
+  - Use CDN cache for high-resolution images and videos
+  - At server level, maximize the memory cache t serve user requests
+  - Use cache engine such as Redis, Memcached to serve frequent queries from the caching engine
+  - Use database cache to serve frequent query from memory
+  - Take care of cache expiration and cache eviction at every layer
+
+#### 1. Using Replaceable resources
+- The inability to replace servers makes it challenging to rollout and test any new updates in our server fleet => can fix by treating server as replaceable resource
+- => always think of immutable infrastructure
+
+#### 2 Createing immutable infrastructure
+- Immutable mean, during application upgrades, not only replace software, but also hardware too
+  - make application stateless
+  - avoid hardcode
+  - create golden image with security best practice
+  - canary testing
+
+#### 3 Think Loose Coupling
+- 
